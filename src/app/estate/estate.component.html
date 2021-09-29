@@ -1,0 +1,42 @@
+<div class="container">
+    <div>
+      <header>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="navbar navbar-expand-sm">
+          <ul class="navbar-nav">
+            <li class="nav-item float-right">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="navbar-text col-sm-2">Filter:</label>
+                  <div class="col-sm-5">
+                    <input
+                      type="text"
+                      name="searchText"        
+                    placeholder="Search by id, name, price, location"
+                     [(ngModel)]="searchText"
+                    class="novalidate form-control  mr-sm-2"
+                      (keyup)="filterEstates()"
+                      /> 
+                      <div id="button" class=" pull-left">
+                        <button  type="button" class="btn btn-primary" routerLink="edit/0" id="button">Add New Estate</button>
+                      </div>
+                  <div class="text-right">      
+                        <button type="button" class="btn btn-success"  (click)="logout()">logout</button>
+                        </div>
+                      </div>
+                 
+                </div>
+              </form>
+              <h4>{{searchText}}</h4>
+             </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-estate-form [estatesList]="estates" (delEvent)="deleteEstate($event)">
+</app-estate-form>
+

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+         
+          <div class="col-md-3 card" *ngFor="let estates of estatesList" id="div1" >
+            <div class="card-header">
+                <button  class="btn btn-primary" routerLink="/images/:{{estates.id}}" id="button">view details</button><br><br>
+                <img class="img" src="assets/images/{{estates.name}}.jpg" width="250px" height="auto">
+             <a  class="pull-right" (click)="deleteEstate(estates.id)"><mat-icon style="color: black;">delete_forever</mat-icon></a>
+             
+          </div>
+         
+         <div class="card-body" id="div">
+              Id:{{estates.id}}<br>
+              Name: {{estates.name}}<br>
+              Price: {{estates.price}}<br>
+              Square Yards: {{estates.squareYards}}<br>
+              Location:{{estates.location}}
+
+              
+              <a class="pull-right" routerLink="edit/{{estates.id}}"><mat-icon style="color:black;">edit</mat-icon></a>
+          </div>
+      </div> 
+      </div>
+</div>

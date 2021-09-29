@@ -1,0 +1,41 @@
+{
+  "estates": [
+    {
+      "id": 101,
+      "name": "blue sky",
+      "price": 200000,
+      "location": "hyderabad",
+      "squareYards": 15
+    },
+    {
+      "id": 102,
+      "name": "vision",
+      "price": "200000",
+      "location": "kukatpally",
+      "squareYards": "20"
+    },
+    {
+      "id": 103,
+      "name": "svs",
+      "price": "2000000",
+      "location": "hyderabad",
+      "squareYards": "28"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "User",
+      "password": "user123",
+      "mobileNumber": 999999999
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "username": "Admin",
+      "password": "admin123",
+      "mobileNumber": 9876543210
+    }
+  ]
+}

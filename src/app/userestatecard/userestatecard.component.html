@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="row">
+         
+          <div class="col-md-3 card"  *ngFor="let estates of estatesList" id="div1" >
+            <div class="card-header">
+                <button  class="btn btn-primary" routerLink="/images" id="button">view details</button><br><br>
+                <img class="img" src="assets/images/{{estates.name}}.jpg" width="250px" height="auto">
+          </div>
+         
+         <div class="card-body" id="div" >
+              Id:{{estates.id}}<br>
+              Name: {{estates.name}}<br>
+              Price: {{estates.price}}<br>
+              Square Yards: {{estates.squareYards}}<br>
+              Location:{{estates.location}}
+          </div>
+      </div>
+          
+      </div>
